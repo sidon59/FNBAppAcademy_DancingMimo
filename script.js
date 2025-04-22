@@ -1,4 +1,4 @@
- // Set up countdown
+ // Setting up countdown
  const countdownEl = document.getElementById('countdown');
  let count = 3;
  
@@ -15,7 +15,7 @@
    }
  }, 1000);
  
- // Create emoji rain
+ // emoji rain
  const emojiRain = document.getElementById('emojiRain');
  const emojis = ['💻', '🚀', '🔥', '✨', '🎉', '📱', '💎', '👩‍💻', '🎯', '💯'];
  const emojiCount = 30;
@@ -30,7 +30,7 @@
    const delay = Math.random() * 5;
    const duration = Math.random() * 3 + 2;
    
-   // Set content and styles
+   // Setting content and styles
    emoji.textContent = randomEmoji;
    emoji.style.left = `${posX}%`;
    emoji.style.animationDuration = `${duration}s`;
@@ -39,12 +39,13 @@
    emojiRain.appendChild(emoji);
  }
  
- // Create coding elements background
+ // coding elements background
  const codingElements = document.getElementById('codingElements');
  const codeSnippets = [
    '{ code }', '< app />', 'function()', 'FNB.js', 'while(true)',
    'if(coding)', '#challenge', 'class App', 'import React', '.then()',
-   'async', 'await', '</html>', '$scope', '==>', '[array]'
+   'async', 'await', '</html>', '$scope', '==>', '[array]',
+   '< Ximiyeto />', '< Ximiyeto />'
  ];
  
  for (let i = 0; i < 25; i++) {
@@ -58,7 +59,7 @@
    const rotation = Math.random() * 360;
    const size = Math.random() * 20 + 14;
    
-   // Set content and styles
+   // Setting content and styles
    codeEl.textContent = snippet;
    codeEl.style.left = `${posX}%`;
    codeEl.style.top = `${posY}%`;
@@ -76,7 +77,7 @@
    likes++;
    heartBtn.textContent = `❤️ ${likes}`;
    
-   // Create flying heart effect
+   // flying heart effect
    const heart = document.createElement('div');
    heart.textContent = '❤️';
    heart.style.position = 'absolute';
